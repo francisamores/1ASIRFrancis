@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dibujar cuadrados en canvas con Java Script Fco Jesus Amores</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Listado Variado</h1>
+    
+    <h2>CANVAS BASICO</h2>
+    <canvas id="Cuadrado Rojo" title="Cuadradro Rojo" width="150" height="150"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Cuadrado Rojo");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#ff0000";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+    
+    <canvas id="Cuadrado Verde" title="Cuadradro Verde" width="100" height="100"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Cuadrado Verde");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#0B610B";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+     
+     <canvas id="Cuadrado azul" title="Cuadradro azul" width="75" height="75"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Cuadrado azul");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#0000FF";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+    
+   
+    
+    <canvas id="Rectangulo casi blanco" title="Rectangulo casi blanco" width="100" height="50"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Rectangulo casi blanco");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#F2F2F2";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+    
+    <canvas id="Rectangulo gris" title="Rectangulo gris" width="50" height="100"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Rectangulo gris");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#848484";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+    
+    <canvas id="Rectangulo negro" title="Rectangulo negro" width="100" height="50"></canvas>
+    <script type="text/javascript">
+      {
+       let canvas = document.getElementById("Rectangulo negro");
+       let contexto = canvas.getContext ("2d");
+       contexto.fillStyle = "#000000";
+       contexto.fillRect (0,0,150,150);
+       }
+     </script>
+    
+    
+    
+     <canvas id="idCirculo"></canvas>
+     <script>
+       {
+         let circulo = document.getElementById("idCirculo").getContext("2d");
+         let gradiente = circulo.createLinearGradient (0, 0, 170, 0);
+         gradiente.addColorStop(0, "black");
+         gradiente.addColorStop(1, "white");
+    
+         circulo.fillStyle = gradiente;
+         circulo.beginPath();
+         circulo.arc (100, 75, 50, 0, 2 *Math.PI);
+         circulo.stroke();
+         circulo.fill();
+       }
+     </script>
+    
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+        <script>
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext('2d');
+          var centerX = canvas.width / 2;
+          var centerY = canvas.height / 2;
+          var radius = 50;
+    
+          context.beginPath();
+          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+          context.fillStyle = 'red';
+          context.fill();
+          context.lineWidth = 5;
+          context.strokeStyle = '#FF0000';
+          context.stroke();
+        </script>
+    
+    </body>
+</html>
